@@ -1,0 +1,132 @@
+:root
+{
+    --Cream:rgb(240, 232, 223);
+    --montserrat:'Montserrat', sans-serif;
+    --font-size:14px;
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --green:rgb(65, 120, 93);
+    --Fraunces:'Fraunces';
+}
+body
+{
+    margin: 0;
+    width: fill;
+    height: 100vh;
+    background-color:rgb(240, 232, 223) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all
+{
+    margin: 0;
+    width: 344px;
+    height: 610px;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 40% 60%;
+    border-radius: 10px;
+    background-color: var(--White);
+    overflow: hidden;
+    text-transform: capitalize;
+    font-family: var(--montserrat);
+    position: relative;
+}
+.all .image
+{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1 ;
+    width: 100%;
+}
+.all .image img:last-child
+{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+}
+.all .image img:first-child
+{
+    display: none;
+}
+.product-disc 
+{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1; 
+    padding: 20px;
+    padding-left: 30px;
+}
+.product-disc .perfume
+{
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: var(--font-size);
+    letter-spacing: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-disc .title
+{
+    color:  var(--Very-dark-blue);
+    font-size: 34px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: var(--Fraunces);
+    line-height: 34px;
+}
+
+.product-disc .discrebtion
+{
+    color: var(--Dark-grayish-blue);
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.product-disc .prices
+{
+    margin: 0;
+    display: flex;
+}
+.product-disc .price
+{
+    color: var(--green);
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--Fraunces);
+    line-height: 34px;
+    display: inline-block;
+}
+.product-disc .old-price
+{
+    color: var(--Dark-grayish-blue);
+    font-size: var(--font-size);
+    padding-left: 15px;
+    text-decoration:line-through;
+    align-self: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.product-disc .button
+{
+    background-color:var(--green);
+    color: var(--White);
+    margin-right: 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top:15px;
+}
+.product-disc .button:hover
+{
+    background-color: hsl(149, 30%, 17%);
+}
+.product-disc .button img
+{
+    margin: 10px;
+}
